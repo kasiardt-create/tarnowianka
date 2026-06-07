@@ -473,49 +473,30 @@
       font-size: 0.85rem;
     }
 
-    /* RESPONSIVE DESIGN */
+   /* POPRAWIONY RESPONSYWNY DESIGN */
     @media (max-width: 1024px) {
-  .nav-wrapper {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .nav-links a {
-    margin-left: 0 !important;
-  }
-}
-      .hero-section, .bento-grid, .pub-grid, .contact-container, .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-section, .bento-grid, .pub-grid, .contact-container, .about-grid { 
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+      }
       .bento-card.double { grid-column: span 1; }
       .bento-grid { grid-template-columns: 1fr; }
       .about-sidebar { position: static; }
-      footer { flex-direction: column; gap: 20px; text-align: center;
-@media (max-width: 1024px) {
-  /* ... inne Twoje style ... */
-  
-  .contact-container {
-    padding: 60px 20px; /* Mniejsze marginesy na telefonach */
-    gap: 40px;
-  }
+      footer { flex-direction: column; gap: 20px; text-align: center; }
 
-  .contact-info h2 {
-    font-size: 2rem; /* Mniejszy nagłówek na mobilkach */
-  }
+      /* Naprawa rozjechanych słów */
+      p, .bento-card p, .pub-card p, .about-content p, .contact-info p {
+        text-align: left !important;
+        hyphens: none !important;
+      }
 
-  .contact-info a {
-    font-size: 1.2rem; /* Mniejsze linki, żeby nie łamały się w brzydki sposób */
-    word-break: break-all; /* Zabezpieczenie przed wychodzeniem tekstu poza ekran */
-  }
-
-  .linkedin-box {
-    margin-top: 30px;
-  }
-} }
+      /* Poprawki sekcji kontaktowej */
+      .contact-container { padding: 60px 20px; }
+      .contact-info h2 { font-size: 2rem; }
+      .contact-info a { font-size: 1.2rem; word-break: break-all; }
+      .linkedin-box { margin-top: 30px; }
     }
+
   </style>
 </head>
 <body>
