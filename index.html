@@ -475,6 +475,8 @@
 
    /* POPRAWIONY RESPONSYWNY DESIGN */
     @media (max-width: 1024px) {
+/* Odsunięcie treści od góry */
+    body { padding-top: 200px; }
       .hero-section, .bento-grid, .pub-grid, .contact-container, .about-grid { 
         grid-template-columns: 1fr; 
         gap: 40px; 
@@ -495,24 +497,22 @@
       .contact-info h2 { font-size: 2rem; }
       .contact-info a { font-size: 1.2rem; word-break: break-all; }
       .linkedin-box { margin-top: 30px; }
-.nav-wrapper {
-    flex-direction: column !important; /* Wymuszenie pionowego układu */
-    gap: 20px !important;
-    padding: 20px 0 !important;
-  }
-
-  .nav-links {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 15px !important;
-    margin-left: 0 !important;
-  }
-
-  .nav-links a {
-    margin-left: 0 !important;
-    font-size: 0.85rem !important; /* Nieco mniejsza czcionka, by się zmieściły */
-  }
+/* Układ nawigacji */
+    .nav-wrapper {
+      flex-direction: column !important;
+      gap: 20px !important;
+      padding: 20px 0 !important;
+    }
+    .nav-links {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 15px !important;
+      margin-left: 0 !important;
+    }
+    .nav-links a {
+      margin-left: 0 !important;
+      font-size: 0.85rem !important;
     }
 
   </style>
